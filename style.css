@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(187, 187, 187);
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 75px;
+}
+
+.list {
+    width: 60%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.list li a:hover {
+    color: gray;
+}
+
+.rightnav {
+    width: 40%;
+    text-align: right;
+    padding: 0 10px;
+    /* background-color: purple; */
+}
+
+#search {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.background {
+    /* background: #ff9857; */
+    background: rgba(0, 0, 0, 0.7)url(../img/landscape.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 75%;
+    margin: auto;
+    height: 50vh;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-big {
+    font-size: 34px;
+    padding: 16px 0;
+}
+
+.text-small {
+    font-size: 16px;
+}
+
+.btn {
+    padding: 5px 18px;
+    margin: 16px 4px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sn {
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+.btn-dark {
+    color: gray;
+    font-size: 14px;
+    border: 2px solid gray;
+    background: white;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.section-2-left {
+    flex-direction: row-reverse;
+}
+
+.para {
+    padding: 0 60px;
+}
+
+.rightimg img {
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.section-3 {
+    background-color: aliceblue;
+}
+
+.text-center {
+    padding-top: 16px;
+    text-align: center;
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-input {
+    margin: 10px auto;
+    width: 110%;
+    padding: 6px;
+    font-size: 12px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.footer {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+}
+
+.line {
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 3px;
+}
+
+@media only screen and (max-width: 980px) {
+
+    body {
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .list li {
+        padding: 15px 0;
+    }
+
+    .rightnav {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 80px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 60vh;
+    }
+
+    .section-2 {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+    }
+
+    .textarea {
+        display: flex;
+    }
+
+    .para {
+        padding: 10px;
+    }
+
+    .rightimg img {
+        height: 170px;
+    }
+
+    .form-input {
+        width: 60%;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer p {
+        padding: 10px;
+    }
+}
