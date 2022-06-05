@@ -1,0 +1,2 @@
+# educate
+Simple education website
